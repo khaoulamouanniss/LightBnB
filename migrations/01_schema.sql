@@ -31,6 +31,7 @@ CREATE TABLE properties (
   thumbnail_photo_url VARCHAR(255) NOT NULL,
   cover_photo_url VARCHAR(255) NOT NULL,
   is_ative BOOLEAN DEFAULT TRUE,
+  unit_number INTEGER,
   user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
   address_id INTEGER REFERENCES addresses(id) ON DELETE CASCADE
 );
